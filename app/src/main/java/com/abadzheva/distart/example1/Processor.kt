@@ -1,4 +1,4 @@
-package com.example.dependencyinjectionstart.example1
+package com.abadzheva.distart.example1
 
 class Processor {
 }
