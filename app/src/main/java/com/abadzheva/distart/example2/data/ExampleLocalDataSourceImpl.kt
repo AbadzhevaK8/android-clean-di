@@ -1,10 +1,8 @@
-package com.example.dependencyinjectionstart.example2.data
+package com.abadzheva.distart.example2.data
 
 class ExampleLocalDataSourceImpl(
-    private val database: ExampleDatabase
+    private val database: ExampleDatabase,
 ) : ExampleLocalDataSource {
-
     override fun method() {
-
     }
 }

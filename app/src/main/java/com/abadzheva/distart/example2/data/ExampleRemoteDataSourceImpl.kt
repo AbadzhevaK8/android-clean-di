@@ -1,10 +1,8 @@
-package com.example.dependencyinjectionstart.example2.data
+package com.abadzheva.distart.example2.data
 
 class ExampleRemoteDataSourceImpl(
-    private val apiService: ExampleApiService
+    private val apiService: ExampleApiService,
 ) : ExampleRemoteDataSource {
-
     override fun method() {
-
     }
 }

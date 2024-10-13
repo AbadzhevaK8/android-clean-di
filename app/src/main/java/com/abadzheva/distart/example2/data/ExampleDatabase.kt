@@ -1,4 +1,4 @@
-package com.example.dependencyinjectionstart.example2.data
+package com.abadzheva.distart.example2.data
 
 class ExampleDatabase {
 

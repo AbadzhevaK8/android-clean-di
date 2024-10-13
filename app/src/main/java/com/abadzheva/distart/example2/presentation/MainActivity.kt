@@ -1,8 +1,8 @@
-package com.example.dependencyinjectionstart.example2.presentation
+package com.abadzheva.distart.example2.presentation
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.dependencyinjectionstart.R
+import androidx.appcompat.app.AppCompatActivity
+import com.abadzheva.distart.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
