@@ -1,7 +1,11 @@
 package com.abadzheva.distart.example1
 
-class ComputerTower(
-    val storage: Storage,
-    val memory: Memory,
-    val processor: Processor,
-)
+import javax.inject.Inject
+
+class ComputerTower
+    @Inject
+    constructor(
+        val storage: Storage,
+        val memory: Memory,
+        val processor: Processor,
+    )
