@@ -1,8 +1,10 @@
 package com.abadzheva.distart.example2.data.mapper
 
-class ExampleMapper {
+import javax.inject.Inject
 
-    fun map() {
-
+class ExampleMapper
+    @Inject
+    constructor() {
+        fun map() {
+        }
     }
-}
