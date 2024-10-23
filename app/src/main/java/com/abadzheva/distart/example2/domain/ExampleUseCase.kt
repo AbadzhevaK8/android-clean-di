@@ -1,9 +1,13 @@
 package com.abadzheva.distart.example2.domain
 
-class ExampleUseCase(
-    private val repository: ExampleRepository,
-) {
-    operator fun invoke() {
-        repository.method()
+import javax.inject.Inject
+
+class ExampleUseCase
+    @Inject
+    constructor(
+        private val repository: ExampleRepository,
+    ) {
+        operator fun invoke() {
+            repository.method()
+        }
     }
-}
