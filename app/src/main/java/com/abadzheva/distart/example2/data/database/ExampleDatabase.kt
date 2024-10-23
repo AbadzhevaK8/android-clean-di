@@ -1,13 +1,17 @@
 package com.abadzheva.distart.example2.data.database
 
+import android.content.Context
 import android.util.Log
+import com.abadzheva.distart.R
 import javax.inject.Inject
 
 class ExampleDatabase
     @Inject
-    constructor() {
+    constructor(
+        private val context: Context,
+    ) {
         fun method() {
-            Log.d(LOG_TAG, "ExampleDatabase method")
+            Log.d(LOG_TAG, "ExampleDatabase method ${context.getString(R.string.app_name)}")
         }
 
         companion object {
