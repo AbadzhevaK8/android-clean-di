@@ -14,6 +14,7 @@ class MainActivity : AppCompatActivity() {
         DaggerApplicationComponent
             .builder()
             .context(application)
+            .timeMillis(System.currentTimeMillis())
             .build()
     }
 

@@ -9,9 +9,13 @@ class ExampleApiService
     @Inject
     constructor(
         private val context: Context,
+        private val timeMillis: Long,
     ) {
         fun method() {
-            Log.d(LOG_TAG, "ExampleApiService method ${context.getString(R.string.app_name)}")
+            Log.d(
+                LOG_TAG,
+                "ExampleApiService method ${context.getString(R.string.app_name)} $timeMillis",
+            )
         }
 
         companion object {
