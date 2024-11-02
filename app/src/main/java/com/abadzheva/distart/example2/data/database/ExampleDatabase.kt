@@ -4,7 +4,9 @@ import android.content.Context
 import android.util.Log
 import com.abadzheva.distart.R
 import javax.inject.Inject
+import javax.inject.Singleton
 
+@Singleton
 class ExampleDatabase
     @Inject
     constructor(
@@ -14,7 +16,7 @@ class ExampleDatabase
         fun method() {
             Log.d(
                 LOG_TAG,
-                "ExampleDatabase method ${context.getString(R.string.app_name)} $timeMillis",
+                "ExampleDatabase method ${context.getString(R.string.app_name)} $timeMillis $this",
             )
         }
 
