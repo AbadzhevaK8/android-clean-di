@@ -4,9 +4,7 @@ import android.content.Context
 import android.util.Log
 import com.abadzheva.distart.R
 import javax.inject.Inject
-import javax.inject.Singleton
 
-@Singleton
 class ExampleApiService
     @Inject
     constructor(
