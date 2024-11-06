@@ -2,13 +2,18 @@ package com.abadzheva.distart.example2.presentation
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.ViewModelProvider
 import com.abadzheva.distart.R
 import com.abadzheva.distart.example2.ExampleApp
 import javax.inject.Inject
 
 class MainActivity : AppCompatActivity() {
     @Inject
-    lateinit var viewModel: ExampleViewModel
+    lateinit var viewModelFactory: ViewModelFactory
+
+    private val viewModel by lazy {
+        ViewModelProvider(this, viewModelFactory)[ExampleViewModel::class.java]
+    }
 
     private val component by lazy {
         (application as ExampleApp).component
